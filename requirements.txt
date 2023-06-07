@@ -1,0 +1,10 @@
+notebook
+ipywidgets
+tqdm
+python-dotenv
+requests
+openai
+langchain
+Flask
+transformers
+torch
