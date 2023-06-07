@@ -28,8 +28,8 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
 @app.post("/get")
 async def chat(request: Request):
     msg = await request.form()
-    input = msg["msg"]
-    return get_completion(input)
+    response = get_completion(msg["msg"])
+    return response.replace("\n", "<br>")
 
 if __name__ == '__main__':
     uvicorn.run(app, host="0.0.0.0", port=8000)
