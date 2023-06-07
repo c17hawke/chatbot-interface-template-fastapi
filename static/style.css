@@ -14,7 +14,12 @@ body,html{
 	height: 700px;
 	border-radius: 15px !important;
 	background-color: rgba(0,0,0,0.4) !important;
+	box-shadow: 0 4px 8px 0 rgba(249, 107, 107, 0.2);
+	transition: 0.3s;
 }
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(91, 225, 243, 0.2);
+  }
 .contacts_body{
 	padding:  0.75rem 0 !important;
 	overflow-y: auto;
